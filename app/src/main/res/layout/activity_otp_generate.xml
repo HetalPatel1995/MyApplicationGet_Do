@@ -32,25 +32,80 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify It's You..."
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:fontFamily="@font/lato"
+            android:text="OTP has been sent to on your mobile. \nPlease enter it below."
+            android:textColor="@color/small_text"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Number"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            />
+
+
         <EditText
             android:id="@+id/editTextCode"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_40sdp"
-            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:ems="10"
             android:layout_gravity="center"
             android:hint="   OTP"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:inputType="number"
             android:background="@color/white"
             android:textColorHint="@color/black2"
             tools:layout_editor_absoluteX="85dp"
             tools:layout_editor_absoluteY="57dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did't Received OTP ?"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/small_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/small_text"
+            android:textSize="@dimen/_10sdp"
+            android:text="Resend Now..."
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+
 
         <Button
             android:id="@+id/OtpGenerate"
@@ -61,7 +116,6 @@
             android:paddingLeft="@dimen/_15sdp"
             android:paddingRight="@dimen/_20sdp"
             android:background="@drawable/round_button"
-            android:layout_marginTop="@dimen/_50sdp"
             android:drawableLeft="@drawable/ic_arrow_forward_white_24dp" />
 
 
@@ -78,6 +132,6 @@
 
     </LinearLayout>
 
-
+    </ScrollView>
 
 </LinearLayout>

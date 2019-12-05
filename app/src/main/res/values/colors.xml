@@ -10,4 +10,5 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="black2">#929191</color>
+    <color name="small_text">#4B4949</color>
 </resources>
