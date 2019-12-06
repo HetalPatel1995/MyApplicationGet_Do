@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -28,8 +29,9 @@ public class OtpGenerateActivity extends AppCompatActivity {
     private String verificationid;
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
-    private EditText editText;
+    private EditText pinCode1,pinCode2,pinCode3,pincode4,pinCode5,pinCode6;
     Button BtnOtpGenerate;
+    LinearLayout PinCodeEditLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +41,14 @@ public class OtpGenerateActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         progressBar = findViewById(R.id.progressbar);
-        editText = findViewById(R.id.editTextCode);
+        PinCodeEditLayout=findViewById(R.id.PinCodeEditLayout);
+//        editText = findViewById(R.id.editTextCode);
+        pinCode1 = findViewById(R.id.PinCode1);
+        pinCode2 = findViewById(R.id.PinCode2);
+        pinCode3 = findViewById(R.id.PinCode3);
+        pincode4 = findViewById(R.id.PinCode4);
+        pinCode5 = findViewById(R.id.PinCode5);
+        pinCode6 = findViewById(R.id.PinCode6);
         BtnOtpGenerate=findViewById(R.id.OtpGenerate);
 
         String phonenumber = getIntent().getStringExtra("phonenumber");
@@ -48,12 +57,25 @@ public class OtpGenerateActivity extends AppCompatActivity {
         BtnOtpGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String code = editText.getText().toString().trim();
+                String code1 = pinCode1.getText().toString().trim();
+                String code2 = pinCode2.getText().toString().trim();
+                String code3 = pinCode3.getText().toString().trim();
+                String code4 = pincode4.getText().toString().trim();
+                String code5 = pinCode5.getText().toString().trim();
+                String code6 = pinCode6.getText().toString().trim();
+//                String code = editText.getText().toString().trim();
+                String code=code1 + code2 + code3 + code4 + code5 + code6;
+                if ((code1.isEmpty() ||code2.isEmpty()||code3.isEmpty()||code4.isEmpty()||code5.isEmpty()||code6.isEmpty() || code.length() < 6)){
 
-                if ((code.isEmpty() || code.length() < 6)){
+//                    editText.setError("Enter code...");
+                    pinCode1.setError("enter code..");
+                    pinCode2.setError("enter code..");
+                    pinCode3.setError("enter code..");
+                    pincode4.setError("enter code..");
+                    pinCode5.setError("enter code..");
+                    pinCode6.setError("enter code..");
 
-                    editText.setError("Enter code...");
-                    editText.requestFocus();
+                    pinCode1.requestFocus();
                     return;
                 }
                 verifyCode(code);
@@ -111,7 +133,8 @@ public class OtpGenerateActivity extends AppCompatActivity {
             if (code != null){
                 progressBar.setVisibility(View.VISIBLE);
                 verifyCode(code);
-                editText.setText(code);
+                PinCodeEditLayout.setVisibility(View.INVISIBLE);
+//                editText.setText(code);
 
             }
         }

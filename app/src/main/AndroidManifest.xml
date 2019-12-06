@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SlidderActivity"></activity>
+        <activity android:name=".auth.ResetPin"></activity>
+        <activity android:name=".auth.LoginActivity" />
+        <activity android:name=".SlidderActivity" />
         <activity
             android:name=".auth.SetPinGenerate"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />

@@ -69,6 +69,7 @@
                 android:layout_marginRight="@dimen/_10sdp"
                 android:background="@drawable/round_edittext"
                 android:inputType="number"
+                android:gravity="center"
                 android:textColor="@color/black" />
 
             <EditText
@@ -77,6 +78,7 @@
                 android:layout_marginRight="@dimen/_10sdp"
                 android:background="@drawable/round_edittext"
                 android:inputType="number"
+                android:gravity="center"
                 android:textColor="@color/black" />
 
             <EditText
@@ -85,6 +87,7 @@
                 android:layout_marginRight="@dimen/_10sdp"
                 android:background="@drawable/round_edittext"
                 android:inputType="number"
+                android:gravity="center"
                 android:textColor="@color/black" />
 
             <EditText
@@ -92,12 +95,13 @@
                 android:layout_height="@dimen/_50sdp"
                 android:background="@drawable/round_edittext"
                 android:inputType="number"
+                android:gravity="center"
                 android:textColor="@color/black" />
 
         </LinearLayout>
 
         <Button
-            android:id="@+id/OtpGenerate"
+            android:id="@+id/SetPinBtn"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_gravity="center"
