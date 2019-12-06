@@ -23,11 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         animation = AnimationUtils.loadAnimation(this,R.anim.alpha);
         animation.reset();
-
-        translate = AnimationUtils.loadAnimation(this,R.anim.bounce);
-        translate.reset();
         imgLogo.clearAnimation();
-        imgLogo.startAnimation(translate);
+        imgLogo.startAnimation(animation);
 
         splashTread = new Thread() {
             @Override
@@ -40,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                         waited += 100;
                     }
                     Intent intent = new Intent(MainActivity.this,
-                            RegisterMobile.class);
+                            SlidderActivity.class);
                     startActivity(intent);
                     MainActivity.this.finish();
                 } catch (InterruptedException e) {

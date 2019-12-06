@@ -11,4 +11,27 @@
     <color name="black">#000000</color>
     <color name="black2">#929191</color>
     <color name="small_text">#4B4949</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#B7BBBA</color>
+    <color name="dot_dark_screen2">#B7BBBA</color>
+
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#755F64</color>
+    <color name="dot_light_screen2">#755F64</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+
+    </array>
+
 </resources>
