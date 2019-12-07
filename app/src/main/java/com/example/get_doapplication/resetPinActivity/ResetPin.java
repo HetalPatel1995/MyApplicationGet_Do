@@ -1,4 +1,4 @@
-package com.example.get_doapplication.auth;
+package com.example.get_doapplication.resetPinActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 

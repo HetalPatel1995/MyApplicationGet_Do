@@ -5,6 +5,11 @@
     android:orientation="vertical"
     android:background="@color/back_color_activity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,25 +17,26 @@
         android:textColor="@color/background_color"
         android:textSize="@dimen/_50sdp"
         android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_70sdp"
         android:fontFamily="@font/lato_bold"
         />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_200sdp"
-        android:src="@drawable/unb"
+        android:src="@drawable/trvel_get_do"
         android:layout_gravity="center"
         />
 
     <TextView
+        android:layout_marginTop="@dimen/_30sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:text="Travel Buddy"
-        android:textSize="@dimen/_30sdp"
+        android:textSize="@dimen/_25sdp"
         android:textColor="@color/background_color"
-        android:fontFamily="@font/lato_bold"
+        android:fontFamily="@font/lato"
         />
 
     <TextView
@@ -38,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:text="Request a ride from your friends or \nFamily members from your contacts."
-        android:textSize="@dimen/_13sdp"
+        android:textSize="@dimen/_12sdp"
         android:textColor="@color/small_text"
         android:fontFamily="@font/lato"
         />
@@ -49,9 +55,9 @@
         android:layout_marginLeft="@dimen/_20sdp"
         android:text="Goods"
         android:layout_marginTop="@dimen/_10sdp"
-        android:textSize="@dimen/_30sdp"
+        android:textSize="@dimen/_25sdp"
         android:textColor="@color/background_color"
-        android:fontFamily="@font/lato_bold"
+        android:fontFamily="@font/lato"
         />
 
     <TextView
@@ -59,9 +65,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
         android:text="Instantly, Get anything and \neverything* at your doorstep from \nAnyone travelling from a destination \n to yours"
-        android:textSize="@dimen/_13sdp"
+        android:textSize="@dimen/_12sdp"
         android:textColor="@color/small_text"
         android:fontFamily="@font/lato"
         />
 
+    </LinearLayout>
 </LinearLayout>
