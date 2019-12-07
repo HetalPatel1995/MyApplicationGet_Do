@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.get_doapplication.R;
@@ -32,6 +33,7 @@ public class OtpGenerateActivity extends AppCompatActivity {
     private EditText pinCode1,pinCode2,pinCode3,pincode4,pinCode5,pinCode6;
     Button BtnOtpGenerate;
     LinearLayout PinCodeEditLayout;
+    TextView ResendOtp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,13 +52,45 @@ public class OtpGenerateActivity extends AppCompatActivity {
         pinCode5 = findViewById(R.id.PinCode5);
         pinCode6 = findViewById(R.id.PinCode6);
         BtnOtpGenerate=findViewById(R.id.OtpGenerate);
+        ResendOtp=findViewById(R.id.ResendOtp);
 
-        String phonenumber = getIntent().getStringExtra("phonenumber");
+        final String phonenumber = getIntent().getStringExtra("phonenumber");
         sendVerificationCode(phonenumber);
 
         BtnOtpGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String code1 = pinCode1.getText().toString().trim();
+                String code2 = pinCode2.getText().toString().trim();
+                String code3 = pinCode3.getText().toString().trim();
+                String code4 = pincode4.getText().toString().trim();
+                String code5 = pinCode5.getText().toString().trim();
+                String code6 = pinCode6.getText().toString().trim();
+//                String code = editText.getText().toString().trim();
+                String code=code1 + code2 + code3 + code4 + code5 + code6;
+                if ((code1.isEmpty() ||code2.isEmpty()||code3.isEmpty()||code4.isEmpty()||code5.isEmpty()||code6.isEmpty() || code.length() < 6)){
+
+//                    editText.setError("Enter code...");
+                    pinCode1.setError("enter code..");
+                    pinCode2.setError("enter code..");
+                    pinCode3.setError("enter code..");
+                    pincode4.setError("enter code..");
+                    pinCode5.setError("enter code..");
+                    pinCode6.setError("enter code..");
+
+                    pinCode1.requestFocus();
+                    return;
+                }
+                verifyCode(code);
+            }
+        });
+
+        ResendOtp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String phonenumber = getIntent().getStringExtra("phonenumber");
+                sendVerificationCode(phonenumber);
+
                 String code1 = pinCode1.getText().toString().trim();
                 String code2 = pinCode2.getText().toString().trim();
                 String code3 = pinCode3.getText().toString().trim();
@@ -117,6 +151,16 @@ public class OtpGenerateActivity extends AppCompatActivity {
                 mCallBack
         );
     }
+    private void resendVerificationCode(String phoneNumber,
+                                        PhoneAuthProvider.ForceResendingToken token) {
+        PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                phoneNumber,        // Phone number to verify
+                60,                 // Timeout duration
+                TimeUnit.SECONDS,   // Unit of timeout
+                this,               // Activity (for callback binding)
+                mCallBack,         // OnVerificationStateChangedCallbacks
+                token);             // ForceResendingToken from callbacks
+    }
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks
             mCallBack = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -139,10 +183,13 @@ public class OtpGenerateActivity extends AppCompatActivity {
             }
         }
 
+
         @Override
         public void onVerificationFailed(FirebaseException e) {
             Toast.makeText(OtpGenerateActivity.this, e.getMessage(),Toast.LENGTH_LONG).show();
 
         }
     };
+
+
 }
