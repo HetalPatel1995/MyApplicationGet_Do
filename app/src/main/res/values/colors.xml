@@ -15,6 +15,9 @@
 	<color name="success">#42941D</color> 
 	<color name="change">#881F22</color>
 
+    <color name="success">#42941D</color>
+    <color name="change">#881F22</color>
+
     <!-- dots inactive colors -->
     <color name="dot_dark_screen1">#B7BBBA</color>
     <color name="dot_dark_screen2">#B7BBBA</color>
