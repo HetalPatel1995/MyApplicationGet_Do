@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_layout"
+    android:orientation="vertical"
+    tools:context=".Activities.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile."
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+
+        <ImageView
+            android:id="@+id/ImageProfile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/profile"
+            android:background="@drawable/corner_round"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_17sdp"
+        android:textColor="@color/small_text"
+        android:text="first Name"
+            android:fontFamily="@font/lato"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        />
+
+        <TextView
+            android:id="@+id/TxtFname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@color/black"
+            android:text="Hetal"
+            android:fontFamily="@font/lato"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@color/small_text"
+            android:text="first Name"
+            android:fontFamily="@font/lato"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+        <TextView
+            android:id="@+id/TxtLname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@color/black"
+            android:text="Patel"
+            android:fontFamily="@font/lato"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_17sdp"
+                android:textColor="@color/small_text"
+                android:text="Phone Number"
+                android:fontFamily="@font/lato"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_17sdp"
+                android:textColor="@color/success"
+                android:text="Verified"
+                android:fontFamily="@font/lato"
+                android:layout_marginLeft="@dimen/_90sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@color/black"
+            android:text="+91 9764536278"
+            android:fontFamily="@font/lato"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_17sdp"
+                android:textColor="@color/small_text"
+                android:text="PIN"
+                android:fontFamily="@font/lato"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+
+            <TextView
+                android:id="@+id/ChangePin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_17sdp"
+                android:textColor="@color/change"
+                android:text="Change"
+                android:fontFamily="@font/lato"
+                android:layout_marginLeft="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@color/black"
+            android:text="****"
+            android:fontFamily="@font/lato"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

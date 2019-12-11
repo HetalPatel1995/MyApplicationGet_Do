@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_color_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get."
+        android:textColor="@color/background_color"
+        android:textSize="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/lato_bold"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/unb"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="Travel Buddy"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="@color/background_color"
+        android:fontFamily="@font/lato_bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="Request a ride from your friends or \nFamily members from your contacts."
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/small_text"
+        android:fontFamily="@font/lato"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="Goods"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="@color/background_color"
+        android:fontFamily="@font/lato_bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="Instantly, Get anything and \neverything* at your doorstep from \nAnyone travelling from a destination \n to yours"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/small_text"
+        android:fontFamily="@font/lato"
+        />
+
+</LinearLayout>

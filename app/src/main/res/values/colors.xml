@@ -12,6 +12,8 @@
     <color name="black2">#929191</color>
     <color name="small_text">#4B4949</color>
     <color name="forgot">#585757</color>
+	<color name="success">#42941D</color> 
+	<color name="change">#881F22</color>
 
     <!-- dots inactive colors -->
     <color name="dot_dark_screen1">#B7BBBA</color>
@@ -34,5 +36,4 @@
         <item>@color/dot_dark_screen2</item>
 
     </array>
-
 </resources>
