@@ -88,75 +88,102 @@
 <!--            tools:layout_editor_absoluteX="85dp"-->
 <!--            tools:layout_editor_absoluteY="57dp" />-->
 
-        <LinearLayout
-            android:id="@+id/PinCodeEditLayout"
+<!--        <LinearLayout-->
+<!--            android:id="@+id/PinCodeEditLayout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/PinCode1"-->
+<!--                android:layout_width="@dimen/_40sdp"-->
+<!--                android:layout_height="@dimen/_40sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLines="1"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/PinCode2"-->
+<!--                android:layout_width="@dimen/_40sdp"-->
+<!--                android:layout_height="@dimen/_40sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/PinCode3"-->
+<!--                android:layout_width="@dimen/_40sdp"-->
+<!--                android:layout_height="@dimen/_40sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/PinCode4"-->
+<!--                android:layout_width="@dimen/_40sdp"-->
+<!--                android:layout_height="@dimen/_40sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/PinCode5"-->
+<!--                android:layout_width="@dimen/_40sdp"-->
+<!--                android:layout_height="@dimen/_40sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/PinCode6"-->
+<!--                android:layout_width="@dimen/_40sdp"-->
+<!--                android:layout_height="@dimen/_40sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--        </LinearLayout>-->
+
+        <com.chaos.view.PinView
+            android:id="@+id/OtpPinsCode"
+            style="@style/PinWidget.PinView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_gravity="center"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/PinCode1"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:background="@drawable/round_edittext"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLines="1"
-                android:textColor="@color/black" />
-
-            <EditText
-                android:id="@+id/PinCode2"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:background="@drawable/round_edittext"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-            <EditText
-                android:id="@+id/PinCode3"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:background="@drawable/round_edittext"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-            <EditText
-                android:id="@+id/PinCode4"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:background="@drawable/round_edittext"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-            <EditText
-                android:id="@+id/PinCode5"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:background="@drawable/round_edittext"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-            <EditText
-                android:id="@+id/PinCode6"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:background="@drawable/round_edittext"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
+            android:layout_marginTop="@dimen/_10sdp"
+            android:cursorVisible="true"
+            android:hint="X"
+            android:itemBackground="@drawable/round_edittext"
+            android:padding="2dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/black"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="10dp"
+            app:itemWidth="48dp"
+            app:lineColor="@color/back_color_activity"
+            app:lineWidth="0dp"
+            app:viewType="rectangle" />
 
         <TextView
             android:id="@+id/ResendOtp"

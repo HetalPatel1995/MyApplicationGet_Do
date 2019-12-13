@@ -30,16 +30,16 @@
             android:layout_height="@dimen/_100sdp"
             android:src="@drawable/profile"
             android:background="@drawable/corner_round"
-            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_70sdp"
             android:layout_marginLeft="@dimen/_30sdp"
             />
 
         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_17sdp"
+        android:textSize="15dp"
         android:textColor="@color/small_text"
-        android:text="first Name"
+        android:text="First Name"
             android:fontFamily="@font/lato"
         android:layout_marginLeft="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_40sdp"
@@ -49,7 +49,7 @@
             android:id="@+id/TxtFname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/_17sdp"
+            android:textSize="15dp"
             android:textColor="@color/black"
             android:text="Hetal"
             android:fontFamily="@font/lato"
@@ -60,9 +60,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/_17sdp"
+            android:textSize="15dp"
             android:textColor="@color/small_text"
-            android:text="first Name"
+            android:text="Last Name"
             android:fontFamily="@font/lato"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_20sdp"
@@ -72,7 +72,7 @@
             android:id="@+id/TxtLname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/_17sdp"
+            android:textSize="15dp"
             android:textColor="@color/black"
             android:text="Patel"
             android:fontFamily="@font/lato"
@@ -88,7 +88,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_17sdp"
+                android:textSize="15dp"
                 android:textColor="@color/small_text"
                 android:text="Phone Number"
                 android:fontFamily="@font/lato"
@@ -100,11 +100,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_17sdp"
+                android:textSize="15dp"
                 android:textColor="@color/success"
                 android:text="Verified"
                 android:fontFamily="@font/lato"
-                android:layout_marginLeft="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_120sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 />
 
@@ -115,7 +115,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/_17sdp"
+            android:textSize="15dp"
             android:textColor="@color/black"
             android:text="+91 9764536278"
             android:fontFamily="@font/lato"
@@ -131,7 +131,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_17sdp"
+                android:textSize="15dp"
                 android:textColor="@color/small_text"
                 android:text="PIN"
                 android:fontFamily="@font/lato"
@@ -144,7 +144,7 @@
                 android:id="@+id/ChangePin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/_17sdp"
+                android:textSize="15dp"
                 android:textColor="@color/change"
                 android:text="Change"
                 android:fontFamily="@font/lato"
@@ -159,7 +159,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/_17sdp"
+            android:textSize="15dp"
             android:textColor="@color/black"
             android:text="****"
             android:fontFamily="@font/lato"

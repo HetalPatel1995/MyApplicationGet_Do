@@ -56,49 +56,76 @@
             android:textColor="@color/small_text"
             android:textSize="@dimen/_12sdp" />
 
-        <LinearLayout
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_30sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="@dimen/_50sdp"-->
+<!--                android:layout_height="@dimen/_50sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <EditText-->
+<!--                android:layout_width="@dimen/_50sdp"-->
+<!--                android:layout_height="@dimen/_50sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <EditText-->
+<!--                android:layout_width="@dimen/_50sdp"-->
+<!--                android:layout_height="@dimen/_50sdp"-->
+<!--                android:layout_marginRight="@dimen/_10sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <EditText-->
+<!--                android:layout_width="@dimen/_50sdp"-->
+<!--                android:layout_height="@dimen/_50sdp"-->
+<!--                android:background="@drawable/round_edittext"-->
+<!--                android:inputType="number"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--        </LinearLayout>-->
+
+        <com.chaos.view.PinView
+            android:layout_gravity="center"
+            android:id="@+id/firstPinView"
+            android:layout_marginTop="@dimen/_30sdp"
+            style="@style/PinWidget.PinView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_30sdp"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
-
-            <EditText
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:background="@drawable/round_edittext"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-            <EditText
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:background="@drawable/round_edittext"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-            <EditText
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:background="@drawable/round_edittext"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-            <EditText
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:background="@drawable/round_edittext"
-                android:inputType="number"
-                android:gravity="center"
-                android:textColor="@color/black" />
-
-        </LinearLayout>
+            android:cursorVisible="true"
+            android:hint="X"
+            android:inputType="number"
+            android:itemBackground="@drawable/round_edittext"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/black"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="4"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="10dp"
+            app:itemWidth="48dp"
+            app:lineColor="@color/back_color_activity"
+            app:lineWidth="0dp"
+            app:viewType="rectangle" />
 
         <Button
             android:id="@+id/SetPinBtn"
